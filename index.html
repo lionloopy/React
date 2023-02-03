@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 신청서</title>
+
+</head>
+<body>
+    <form action onsubmit="alert('제출 완료!');return false">
+        <p>First name :</p>
+        <input type="text" required>
+        <p>Last name :</p>
+        <input type="text" required>
+        <p>Email :</p>
+        <input type="text" required>
+
+        <p>Gender :
+            <input type="radio" name="gender" value="gender_info" required>"Male"
+            <input type="radio" name="gender" value="gender_info" required>"Female"
+        </p>
+        <p>Favorite :
+            <input type="checkbox" name="lang" value="html">"HTML"
+            <input type="checkbox" name="lang" value="java">"JAVA"
+            <input type="checkbox" name="lang" value="js">"JavaScript"
+        </p>
+        <p>Browser :
+            <select name="browser" required>
+                <option value="크롬">크롬</option>
+                <option value="사파리">사파리</option>
+                <option value="엣지">엣지</option>
+            </select>
+        </p>
+        <p>Birthday :
+            <input type="date" name="birthday">
+        </p>
+        <input type="submit" >
+    </form>
+    
+</body>
+</html>
